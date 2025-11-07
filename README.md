@@ -1,16 +1,29 @@
-# React + Vite
+# Carrusel de Testimonios Dinámico
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Elaboró:** Luis Angel Quijano Guerrero
+**Materia:** Ingenieria de Software
+**Fecha:** 6/11
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+Este proyecto implementa un componente interactivo de carrusel de testimonios desarrollado con React. Está diseñado para ser robusto, accesible y consumir datos en tiempo real, utilizando una base de datos NoSQL de Firebase.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## Características Principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Datos en Tiempo Real:** Los testimonios se cargan dinámicamente desde **Firebase Realtime Database**.
+* **Controles Accesibles:** Permite navegar con botones en pantalla (Siguiente, Anterior, Aleatorio).
+* **Navegación por Teclado:** Soporte para las teclas **← Flecha Izquierda** y **→ Flecha Derecha** para cambiar testimonios. Al usar las flechas, se simula el efecto de "clic" visual en el botón correspondiente.
+* **Autoplay:** Los testimonios rotan automáticamente cada 5 segundos. La rotación se pausa con cualquier interacción del usuario (clic o tecla).
+* **Transiciones CSS:** Efectos visuales suaves de *fade-in* en las imágenes al cambiar el testimonio.
+
+---
+
+## Tecnologías Utilizadas
+
+* **Frontend:** React (usando `useState`, `useEffect`, `useCallback`, `useRef`).
+* **Compilador:** Vite.js
+* **Estilos:** CSS3.
+* **Base de Datos:** Firebase Realtime Database.

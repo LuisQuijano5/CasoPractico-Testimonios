@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Testimonial({ item }) {
     const { nombre, cargo, texto, foto } = item;
     return (

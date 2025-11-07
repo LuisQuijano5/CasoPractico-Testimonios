@@ -12,6 +12,7 @@ body {
   padding: 40px;
   display: flex;
   justify-content: center;
+  background-color: #9fd6d5;
 }
 
 .app {
@@ -64,12 +65,23 @@ body {
   cursor: pointer;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.controls button:hover, .controls button.active {
+  background: #bbb;
+}
+
+.controls button:active, .controls button.active {
+  transform: translateY(3px); 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .counter {
   color: var(--muted);
   margin-top: 8px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .testimonial-name, .testimonial-role{
@@ -92,6 +104,8 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 12px;
-  
-  animation: fadeIn 0.4s ease-in-out;
+}
+
+.testimonial-card {  
+  animation: fadeIn 1s ease-in-out;
 }

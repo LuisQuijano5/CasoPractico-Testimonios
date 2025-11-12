@@ -25,5 +25,5 @@ Este proyecto implementa un componente interactivo de carrusel de testimonios de
 
 * **Frontend:** React (usando `useState`, `useEffect`, `useCallback`, `useRef`).
 * **Compilador:** Vite.js
-* **Estilos:** CSS3.
+* **Estilos:** CSS.
 * **Base de Datos:** Firebase Realtime Database.
